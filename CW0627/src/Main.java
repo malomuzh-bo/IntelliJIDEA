@@ -1,4 +1,4 @@
-import Classes.Fraction;
+import Classes.*;
 
 public class Main {
     public Main() {
@@ -28,7 +28,7 @@ public class Main {
         Country country = new Country("country", "continent", 300, 46504, "capital", arr);
         country.show();*/
         //4
-        Fraction fraction = new Fraction();
+        /*Fraction fraction = new Fraction();
         fraction.numerator = 7;
         fraction.denominator = 25;
         fraction.show();
@@ -40,7 +40,14 @@ public class Main {
         result.show();
         result2.show();
         result3.show();
-        result4.show();
+        result4.show();*/
+        //HW
+        //5
+        Book book = new Book("book", "author", 2010, "publisher",
+                "genre", 207);
+        book.show();
+        //6
+        Car car = new Car("car", "manufacturer", 2010, 7.0f);
     }
 
     public static class Person {
@@ -53,7 +60,6 @@ public class Main {
 
         public Person() {
         }
-
         public Person(String name, String date, String number, String city, String country, String address) {
             this.name = name;
             this.date = date;
@@ -62,7 +68,6 @@ public class Main {
             this.country = country;
             this.address = address;
         }
-
         public void Show() {
             System.out.println("Name: " + this.name);
             System.out.println("Date: " + this.date);
@@ -240,4 +245,5 @@ public class Main {
             System.out.println("------------------");
         }
     }
+
 }
